@@ -11,7 +11,7 @@ Plan, code, document, and present a game written in Python. I encourage you to i
 Excellent work will include:
 
 * Clean, well-written, effective code
-* Version control in Git
+* Version control in Git 
 * Clear documentation of how te code works
 * A presentation of the game and of the process of creating it
 * Citations (MLA format) of the resources you used.
@@ -21,7 +21,7 @@ Excellent work will include:
 ### General
 
 * This is intended as an individual project. You may help each other, but you are responsible for your own work.
-* I am willing to consider partnerships for larger and more complex projects
+* I am willing to consider partnerships for larger and more complex projects 
 * You may (and are encouraged to) use resources you find online, but may not outright copy someone else's work and must credit your sources
 * Your work should challenge you but be achievable
 * You are expected to understand how your own code works. If you are not able to explain any part of your own code, that will be cause for concern
