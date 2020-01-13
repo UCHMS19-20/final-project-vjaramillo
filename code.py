@@ -1,6 +1,8 @@
 print ("Welcome to your closet!")
 print ("Are you ready to get your outfit?")
 answer = input ("Enter yes or no: ")
+boy_sportybottom = ["blue basketball shorts", "red basketball shorts", "white basketball shorts"]
+boy_sportytop = ["blue t-shirt", "red t-shirt", "black t-shirt"]
 
 while answer not in ["yes", "no"]:
     answer = input("Please answer yes or no ")
