@@ -16,6 +16,22 @@ girl_sportyshoes = ["blue sneakers", "black sneakers", "white sneakers"]
 girl_fancydress = ["white dress", "red dress", "purple dress"]
 girl_fancyheels = ["white heels", "black heels"]
 
+def boy_clothes():
+    clothes = input("sporty, casual, or fancy?")
+    while clothes not in ["sporty", "casual", "fancy"]:
+        clothes = input("Please answer sporty, casual, or fancy")
+    if clothes == "sporty":
+        print(f"Your shorts are {random.choice(boy_sportybottom)} and your shirt is {random.choice(boy_sportytop)}")
+        print(f"You're shoes to work out are {random.choice(boy_sportyshoes)}")
+    elif clothes == "casual":
+        print(f"You're gonna be wearing {random.choice(casual_bottom)} and your shirt is {random.choice(casual_top)}")
+        print(f"Your shoes are {random.choice(casual_shoes)}")
+    else:
+        print(f"You're gonna be going to the ball in {random.choice(boy_fancysuit)} and some nice {random.choice(boy_fancyshoes)}")
+
+def girl_clothes():
+
+
 while answer not in ["yes", "no"]:
     answer = input("Please answer yes or no ")
 if answer == "no":
@@ -27,17 +43,6 @@ while gender not in ["boy", "girl"]:
     gender = input("Please answer boy or girl ")
 if gender == "boy":
     print("What style are you going for today?")
+    boy_clothes()
 if gender == "girl": 
     print("What style are you going for today?")
-    
-
-clothes = input("sporty, casual, or fancy?")
-while clothes not in ["sporty", "casual", "fancy"]:
-    clothes = input("Please answer sporty, casual, or fancy")
-if clothes == "sporty":
-    print(f"Your shorts are {random.choice(boy_sportybottom)} and your shirt is {random.choice(boy_sportytop)}")
-elif clothes == "casual":
-    print(f"You're gonna be wearing {random.choice(casual_bottom)} and your shirt is {random.choice(casual_top)}")
-    print(f"Your shoes are {random.choice(casual_shoes)}")
-else:
-    print("fanc")
