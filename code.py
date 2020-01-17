@@ -35,8 +35,9 @@ clothes = input("sporty, casual, or fancy?")
 while clothes not in ["sporty", "casual", "fancy"]:
     clothes = input("Please answer sporty, casual, or fancy")
 if clothes == "sporty":
-    print(random.choice(boy_sportybottom))
+    print(f"Your shorts are {random.choice(boy_sportybottom)} and your shirt is {random.choice(boy_sportytop)}")
 elif clothes == "casual":
-    print("cas")
+    print(f"You're gonna be wearing {random.choice(casual_bottom)} and your shirt is {random.choice(casual_top)}")
+    print(f"Your shoes are {random.choice(casual_shoes)}")
 else:
     print("fanc")
