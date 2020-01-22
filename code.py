@@ -39,7 +39,7 @@ def girl_clothes():
         print(f"You're gonna be wearing {random.choice(girl_sportybottom)} and your shirt is a {random.choice(girl_sportytop)}")
         print(f"You're shoes to work out are {random.choice(boy_sportyshoes)}")
     elif clothes == "casual":
-        print(f"You're gonna be wearing {random.choice(casual_bottom)} and your shirt is a{random.choice(casual_top)}")
+        print(f"You're gonna be wearing {random.choice(casual_bottom)} and your shirt is a {random.choice(casual_top)}")
         print(f"Your shoes are {random.choice(casual_shoes)}")
     else:
         print(f"Wow you're gonna look great! Your dress is a {random.choice(girl_fancydress)} and your heels are {random.choice(girl_fancyheels)}")
