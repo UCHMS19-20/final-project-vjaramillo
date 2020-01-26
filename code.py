@@ -1,6 +1,6 @@
 import random
 print ("Welcome to your closet!")
-print ("Are you ready to get your outfit?")
+print ("Are you ready to get your outfit? ")
 answer = input ("Enter yes or no: ")
 boy_sportybottom = ["blue basketball shorts", "red basketball shorts", "white basketball shorts"]
 boy_sportytop = ["blue t-shirt", "red t-shirt", "black t-shirt"]
@@ -19,7 +19,7 @@ girl_fancyheels = ["white heels", "black heels"]
 def boy_clothes():
     clothes = input("sporty, casual, or fancy?")
     while clothes not in ["sporty", "casual", "fancy"]:
-        clothes = input("Please answer sporty, casual, or fancy")
+        clothes = input("Please answer sporty, casual, or fancy ")
     if clothes == "sporty":
         print(f"Your shorts are {random.choice(boy_sportybottom)} and your shirt is {random.choice(boy_sportytop)}")
         print(f"You're shoes to work out are {random.choice(boy_sportyshoes)}")
@@ -32,7 +32,7 @@ def boy_clothes():
 def girl_clothes():
     clothes = input("sporty, casual, or fancy?")
     while clothes not in ["sporty", "casual", "fancy"]:
-        clothes = input("Please answer sporty, casual, or fancy")
+        clothes = input("Please answer sporty, casual, or fancy ")
     if clothes == "sporty":
         print(f"You're gonna be wearing {random.choice(girl_sportybottom)} and your shirt is {random.choice(girl_sportytop)}")
         print(f"You're shoes to work out are {random.choice(boy_sportyshoes)}")
@@ -48,12 +48,12 @@ if answer == "no":
     print ("Leaving the game")
     exit()
 elif answer =="yes":
-    gender = input ("Are you a boy or a girl?")
+    gender = input ("Are you a boy or a girl? ")
 while gender not in ["boy", "girl"]: 
     gender = input("Please answer boy or girl ")
 if gender == "boy":
-    print("What style are you going for today?")
+    print("What style are you going for today? ")
     boy_clothes()
 if gender == "girl": 
-    print("What style are you going for today?")
+    print("What style are you going for today? ")
     girl_clothes()
