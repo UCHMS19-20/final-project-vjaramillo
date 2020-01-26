@@ -16,8 +16,7 @@ girl_sportyshoes = ["blue sneakers", "black sneakers", "white sneakers"]
 girl_fancydress = ["white dress", "red dress", "purple dress"]
 girl_fancyheels = ["white heels", "black heels"]
  
-
-
+ 
 def boy_clothes():
     clothes = input("sporty, casual, or fancy?")
     while clothes not in ["sporty", "casual", "fancy"]:
