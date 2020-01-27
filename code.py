@@ -15,7 +15,15 @@ girl_sportytop = ["blue t-shirt", "red t-shirt", "pink t-shirt"]
 girl_sportyshoes = ["blue sneakers", "black sneakers", "white sneakers"]
 girl_fancydress = ["white dress", "red dress", "purple dress"]
 girl_fancyheels = ["white heels", "black heels"]
- 
+
+def boy_accessorys ():
+    accesory = input("Would you like an acccesory?")
+    while accesory not in ["yes!", "no!"]:
+        accesory = input("Would you like an acccesory?")
+    if accessory = "yes!":
+        print ("You should wear an ADIDAS hoodie. Have fun")
+    else:
+        exit()
  
 def boy_clothes():
     clothes = input("sporty, casual, or fancy?")
@@ -24,6 +32,7 @@ def boy_clothes():
     if clothes == "sporty":
         print(f"Your shorts are {random.choice(boy_sportybottom)} and your shirt is a {random.choice(boy_sportytop)}")
         print(f"Your sneakers are {random.choice(boy_sportyshoes)}")
+        boy_accessorys()
     elif clothes == "casual":
         print(f"You're gonna be wearing {random.choice(casual_bottom)} and your shirt is a {random.choice(casual_top)}")
         print(f"Your shoes are {random.choice(casual_shoes)}")
