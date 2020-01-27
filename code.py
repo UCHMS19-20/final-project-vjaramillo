@@ -1,6 +1,6 @@
 import random
 print ("Welcome to your closet!")
-print ("Are you ready to get your outfit?")
+print ("Are you ready to get your outfit? ")
 answer = input ("Enter yes or no: ")
 boy_sportybottom = ["blue basketball shorts", "red basketball shorts", "white basketball shorts"]
 #dictionary of boy sporty bottom options to be randomly generated
@@ -27,6 +27,7 @@ girl_sportyshoes = ["blue sneakers", "black sneakers", "white sneakers"]
 girl_fancydress = ["white dress", "red dress", "purple dress"]
 #dictionary of girls fancy dress options to be randomly generated
 girl_fancyheels = ["white heels", "black heels"]
+<<<<<<< HEAD
 #dictionary of girls fancy heel options to be randomly generated
  
 def boy_accessorys ():
@@ -38,13 +39,24 @@ def boy_accessorys ():
         pygame.image.load(src/img/downloadadidashoodie.jpg)
     else:
         exit()
+=======
+>>>>>>> b491cdada6b7cab21037fdd70b3adccb0d78e4f2
 
+def boy_accessorys ():
+    accesory = input("Would you like an acccesory? ")
+    while accesory not in ["yes", "no"]:
+        accesory = input("Would you like an acccesory? ")
+    if accessory == "yes":
+        print ("You should wear an ADIDAS hoodie. Have fun")
+    else:
+        exit()
+ 
 def boy_clothes():
     #function that generates a random outfit for boys after choosing a mood
     clothes = input("sporty, casual, or fancy?")
     #options of moods to randomly generate clothes
     while clothes not in ["sporty", "casual", "fancy"]:
-        clothes = input("Please answer sporty, casual, or fancy")
+        clothes = input("Please answer sporty, casual, or fancy ")
     if clothes == "sporty":
         print(f"Your shorts are {random.choice(boy_sportybottom)} and your shirt is a {random.choice(boy_sportytop)}")
         print(f"Your sneakers are {random.choice(boy_sportyshoes)}")
@@ -76,12 +88,12 @@ if answer == "no":
     print ("Leaving the game")
     exit()
 elif answer =="yes":
-    gender = input ("Are you a boy or a girl?")
+    gender = input ("Are you a boy or a girl? ")
 while gender not in ["boy", "girl"]: 
     gender = input("Please answer boy or girl ")
 if gender == "boy":
-    print("What style are you going for today?")
+    print("What style are you going for today? ")
     boy_clothes()
 if gender == "girl": 
-    print("What style are you going for today?")
+    print("What style are you going for today? ")
     girl_clothes()
