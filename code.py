@@ -17,10 +17,10 @@ girl_fancydress = ["white dress", "red dress", "purple dress"]
 girl_fancyheels = ["white heels", "black heels"]
 
 def boy_accessorys ():
-    accesory = input("Would you like an acccesory?")
-    while accesory not in ["yes!", "no!"]:
-        accesory = input("Would you like an acccesory?")
-    if accessory = "yes!":
+    accesory = input("Would you like an acccesory? ")
+    while accesory not in ["yes", "no"]:
+        accesory = input("Would you like an acccesory? ")
+    if accessory == "yes":
         print ("You should wear an ADIDAS hoodie. Have fun")
     else:
         exit()
